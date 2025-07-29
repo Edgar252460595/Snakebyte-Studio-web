@@ -278,11 +278,15 @@ html body {
 /*telefonos */
 
 @media (max-width: 600px) {
-  #barraSuperior,
+  #barraSuperior{
+     height: auto;
+    padding: 0px 0;
+    position: static;
+  }
   #piePagina {
     height: auto;
     padding: 0px 0;
-    position: static;
+    position:fixed;
   }
 
   .LogoPixelBarraSuperior,
