@@ -1,16 +1,14 @@
-
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
   background-color: #f4f4f9;
-
 }
 
 /* barra superior */
@@ -106,7 +104,8 @@ html, body {
   text-align: start;
   display: flex;
   margin-left: 15%;
-  margin-bottom: 0;
+  margin-bottom: 5vh;
+  margin-top: 5vh;
 }
 
 .presentacion {
@@ -147,7 +146,7 @@ html, body {
   align-items: center;
   text-align: start;
   display: flex;
-  margin-top: 40px;
+  margin-top: 5vh;
   margin-left: 43%;
   margin-bottom: 0;
   font-weight: bold;
@@ -209,4 +208,120 @@ html, body {
   margin-right: auto;
   color: #ccc;
   text-align: center;
+}
+
+/* --- RESPONSIVE DESIGN --- */
+@media (max-width: 900px) {
+  .contenedorHeader,
+  .contenedorPiepagina,
+  .presentacion {
+    align-items: center;
+    text-align: center;
+  }
+
+  .tituloPagina{
+    margin-left: 7vh;
+    font-size: 32px;
+    text-align: start;
+    display: block;
+  }
+  .titulo-Proyectos {
+    font-size: 32px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+  }
+
+  .navegacionPrincipal ul {
+    gap: 10px;
+    padding: 0;
+    margin-left: 5vh;
+  }
+
+  .presentacionSnake{
+    font-size: 16px;
+    width: 50%;
+    margin-left: 0;
+    text-align: justify;
+
+  }
+
+  .logoSnakePresentacion{
+    width: 30%; 
+    height: auto;
+    margin-right: 4vh;
+  }
+  
+
+}
+
+/*telefonos */
+
+@media (max-width: 600px) {
+  #barraSuperior,
+  #piePagina {
+    height: auto;
+    padding: 15px 0;
+    position: static;
+  }
+
+  .LogoPixelBarraSuperior,
+  .LogoFacebookBarraInferior {
+    width: 50px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .tituloPagina {
+    font-size: 30px;
+    margin-left: 2vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
+
+  .titulo-Proyectos {
+    font-size: 30px;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    display: flex;
+    margin-left: 20vh;
+    margin-right: auto;
+    align-items: center;
+    text-align: center;
+
+  }
+
+  .presentacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .presentacionSnake {
+    font-size: 10px;
+    display: block;
+    width: 40%;
+    margin-left: 3vh;
+  }
+
+  .logoSnakePresentacion {
+    display: block;
+    width: 30%; 
+    height: auto;
+    margin-right: 15vh;
+  }
+
+  .contenedorHeader,
+  .contenedorPiepagina {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .textoDerechosAutor {
+    margin-left: 0;
+    font-size: 12px;
+  }
 }
