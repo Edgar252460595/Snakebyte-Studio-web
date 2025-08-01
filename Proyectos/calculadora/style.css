@@ -1,0 +1,129 @@
+.menuGeneral {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.menuContenedor{
+  position: relative;
+  display: inline-block; 
+  margin-right: 20%;
+  margin-top: 3vh;
+  margin-bottom: 5vh;
+}
+
+.tituloCalculadoraPrincipal{
+  font-size: 32px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  margin-top: 3vh;
+  margin-bottom: 5vh;
+}
+
+.descripcionCalculadora{
+  font-size: 18px;
+  color: #333;
+  text-align: start;
+  font-weight: bold;
+  margin-top: 1vh;
+  margin-bottom: 2vh;
+  width: 80%;
+  margin-left: 5vh;
+}
+
+.tituloCalculadora {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  margin-top: 3vh;
+  margin-bottom: 5vh;
+  margin-left: 20%;
+}
+
+.BotonListaCalculadora {
+  display: block;
+  background-color: #4caf50;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  width: 300px;
+  height: 25px;
+    border-radius: 2px;
+
+}
+
+.BotonListaCalculadora:hover {
+  background-color: #45a049;
+
+}
+
+.BotonListaCalculadora:active {
+  background-color: #3e8e41;
+}
+
+.listaCalculadora {
+  z-index: 9999;
+  position: absolute;
+  display: none;
+  min-width: 300px;
+  background-color: #555;
+  list-style: none;
+  width: 100%;
+  min-height: 50px;
+  padding: 0;
+  text-align: center; 
+  font-size: 15px;
+}
+
+
+.listaCalculadora.activo {
+  display: block;
+}
+
+.listaCalculadora a {
+  color: white;
+  padding: 5px;
+  text-decoration: none;
+  display: block;
+  border: 1px black solid;
+}
+
+
+
+.listaCalculadora a:hover {
+  background-color: #777;
+}
+
+.listaCalculadora a:active {
+  background-color: #677;
+}
+
+.BotonListaCalculadora:hover .listaCalculadora {
+  display: block;
+  visibility:visible;
+
+}
+
+  /*tranciciones*/
+
+.calculadora {
+  margin-top: 20px;
+  padding: 15px;
+
+}
+
+  /*diseño de calculadoras*/
+
+#calc-torque{
+  background-color: #b1c2c2;
+  border: 1px solid black;
+
+}
+
+
+#calc-ohm {
+  background-color: #f9e37c;
+  border: 1px solid black;
+
+}

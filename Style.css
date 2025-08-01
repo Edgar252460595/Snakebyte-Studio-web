@@ -390,3 +390,38 @@ html body {
 
 
 }
+
+
+
+/*proyectos*/
+
+.listaProyectos {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    list-style: none;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .listaProyectos a{
+    display: inline-block;
+  background-color: #535654;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 20px;
+  margin: 8px 4px;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background 0.2s, color 0.2s;
+  cursor: pointer;
+  }
+
+  .listaProyectos a:hover {
+  background-color: #8f8f8f;
+  color: #e0ffe0;
+}
