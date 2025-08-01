@@ -41,3 +41,11 @@ if (boton && listaCalculadora) {
       document.getElementById('submenu').classList.remove('activo');
     });
   });
+
+
+    if (location.hostname.includes("github.io")) {
+    const repo = "Snakebyte-Studio-web"; // Cambia esto
+    if (!location.pathname.includes(repo)) {
+      location.href = `/${repo}${location.pathname}`;
+    }
+  }
