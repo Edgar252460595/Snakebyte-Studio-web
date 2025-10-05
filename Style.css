@@ -2,16 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
 
-html body {
-  min-height: 100vh;
-  background-color: #f4f4f9 !important;
-}
-
-/* barra superior */
+/* ---- Barra superior ---- */
 
 #barraSuperior {
   background-color: #202a25;
@@ -23,61 +17,26 @@ html body {
   height: 75px;
 }
 
-.contenedorHeader {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 0;
+.contenedorHeader,
+.contenedorPiepagina {
+  margin: 0;
+  padding: 0;
   justify-content: space-between;
   align-items: center;
   display: flex;
-  
 }
 
-.contenedorHeader .navegacionPrincipal {
-  display: flex;
-  text-align: left;
-  align-items: center;
-  margin-left: 0px;
-  margin-top: 24px;
-  margin-bottom: auto;
-}
 
-/* logo de barra superior */
-
-.contenedorHeader .LogoPixelBarraSuperior {
-  width: 75px;
-  height: auto;
-  display: flex;
-  align-items: flex-end;
-  margin-right: 0;
-  margin-top: 10px;
-  margin-bottom: auto;
-}
-
-.contenedorHeader .LogoPixelBarraSuperior:hover {
-  width: 80px;
-  height: auto;
-}
-
-.contenedorHeader .LogoPixelBarraSuperior:active {
-  width: 80px;
-  height: auto;
-  filter: sepia(1) saturate(10000%) hue-rotate(90deg) brightness(0);
-}
-
-/*navegacion principal y textos*/
 
 .navegacionPrincipal ul {
   display: flex;
   list-style: none;
-  margin: 0;
-  margin-top: 0;
   gap: 20px;
-  padding: 0;
+  margin-top: 3vh;
+  margin-left: 2vh;
 }
 
 .navegacionPrincipal .textoBarraSuperior a {
-  font-style: normal;
   text-decoration: none;
   color: #f4f4f9;
   font-family: Arial, Helvetica, sans-serif;
@@ -95,319 +54,91 @@ html body {
   font-size: 20px;
 }
 
-/*presentacion pagina*/
+/* ---- Logo barra superior ---- */
+
+.LogoPixelBarraSuperior {
+  width: 75px;
+  height: auto;
+  display: flex;
+  align-items: flex-end;
+  margin-top: 1vh;
+  margin-left: 3vh;
+}
+
+.LogoPixelBarraSuperior:hover {
+  transform: scale(1.2);
+}
+
+.LogoPixelBarraSuperior:active {
+  filter: sepia(1) saturate(10000%) hue-rotate(90deg) brightness(0);
+}
+
+/* ---- Presentación página ---- */
 
 .tituloPagina {
   font-size: 40px;
-  font-style: inherit;
   font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
   align-items: center;
-  text-align: start;
-  display: flex;
-  margin-left: 15%;
-  margin-bottom: 5vh;
+  display: block;
   margin-top: 5vh;
-  background-color: #f4f4f9;
+  margin-bottom: 5vh;
+
 }
 
 .presentacion {
-  font-style: inherit;
-  align-items: center;
   display: flex;
-  margin-top: 0;
-  margin-left: 5%;
+  align-items: center;
   justify-content: space-between;
-  background-color: #f4f4f9;
-
 }
 
 .presentacionSnake {
-  display: flex;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   text-align: justify;
-  align-items: start;
-  height: auto;
   width: 50%;
   font-size: 24px;
-  background-color: #f4f4f9;
-
+  margin-left: 5%;
 }
 
 .logoSnakePresentacion {
   display: flex;
   align-items: end;
   width: 30%;
-  height: auto;
   margin-right: 7%;
-  margin-top: -50px;
-  
 }
 
-/*proyectos*/
+/* ---- Proyectos ---- */
 
-.titulo-Proyectos {
+#proyectos {
   font-size: 40px;
-  font-style: inherit;
   font-family: Arial, Helvetica, sans-serif;
-  align-items: center;
-  text-align: start;
-  display: flex;
+  text-align: center;
   margin-top: 5vh;
-  margin-left: 43%;
-  margin-bottom: 0;
   font-weight: bold;
-  background-color: #f4f4f9;
+  display: flex;
+  flex-direction: column;
 }
 
-/* pie de pagina*/
-
-#piePagina {
-  background-color: #202a25;
-  color: #f4f4f9;
-  padding: 10px 0;
-  text-align: center;
-  font-family: "Arial", sans-serif;
-  height: 75px;
+.contenedorProyectos,
+.contenedorListaProyectos {
   width: 100%;
-  margin-bottom: 0;
-  bottom: 0;
-  position:static;
   align-items: center;
-}
-
-.contenedorPiepagina {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 0;
-  justify-content: space-between;
-  align-items: center;
-  display: flex;
-}
-
-/*logo pie de pagina*/
-
-.LogoFacebookBarraInferior {
-  height: 50px;
-  width: auto;
-  margin-top: 5px;
-  margin-bottom: auto;
-  display: flex;
-  margin-right: 10px;
-  align-items: end;
-}
-
-.LogoFacebookBarraInferior:hover {
-  height: 51px;
-  width: auto;
-}
-
-.LogoFacebookBarraInferior:active {
-  height: 50px;
-  filter: sepia(10) saturate(100%) hue-rotate(120deg) brightness(0.5);
-}
-
-/*texto pie depagina*/
-.textoDerechosAutor {
-  display: flex;
-  font-size: 14px;
-  margin-top: 15px;
-  margin-left: 33%;
-  margin-right: auto;
-  color: #f4f4f9;
-  text-align: center;
-}
-
-/* --- RESPONSIVE DESIGN --- */
-@media (max-width: 900px) {
-  .contenedorHeader,
-  .contenedorPiepagina,
-  .presentacion {
-    align-items: center;
-    text-align: center;
-  }
-
-  .tituloPagina{
-    margin-left:auto;
-    margin-right: auto;
-    font-size: 32px;
-    text-align: center;
-    display: block;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-  }
-  .titulo-Proyectos {
-    font-size: 32px;
-    display: flex;
-    text-align: center;
-    align-items: center;
-  }
-
-  .navegacionPrincipal ul {
-    gap: 10px;
-    padding: 0;
-    margin-left: 5vh;
-  }
-
-  .presentacion {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .presentacionSnake{
-    width: 90%;      
-    font-size: 14px;
-    margin: 10px 0;  
-    display: block;
-  }
-
-  .logoSnakePresentacion{
-    width: 50%;      
-    font-size: 14px;
-    margin: 10px 0;  
-    display: block;
-  }
   
-
 }
-
-/*telefonos */
-
-@media (max-width: 600px) {
-  #barraSuperior{
-     height: auto;
-    padding: 0px 0;
-    position: static;
-  }
-  #piePagina {
-    height: auto;
-    padding: 0px 0;
-    position:fixed;
-  }
-
-  .LogoPixelBarraSuperior,
-  .LogoFacebookBarraInferior {
-    width: 50px;
-    height: auto;
-    margin: 0 auto;
-  }
-
-  .tituloPagina {
-    font-size: 30px;
-    margin-left: 2vh;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-  }
-
-  .titulo-Proyectos {
-    font-size: 30px;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-    display: flex;
-    margin-left: 30%;
-    margin-right: auto;
-    align-items: center;
-    text-align: center;
-
-  }
-
-  .presentacion {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 0;
-    width: 100%;
-  }
-
-  .presentacionSnake {
-    font-size: 10px;
-    display: block;
-    width: 40%;
-    margin-left: 3vh;
-  }
-
-  .logoSnakePresentacion {
-    display: block;
-    width: 30%; 
-    height: auto;
-    margin-right: 10%;
-  }
-
-  .contenedorHeader,
-  .contenedorPiepagina {
-    max-width: 100%;
-    padding: 0 10px;
-  }
-
-  .textoDerechosAutor {
-    margin-left: 0;
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 600px) {
-  body {
-    overflow-x: hidden;
-  }
-
-  .presentacion {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-left: 0;
-  width: 100%;
-}
-
-.presentacionSnake {
-  font-size: 10px;
-  display: block;
-  width: 40%;
-  margin-left: 3vh;
-}
-
-.logoSnakePresentacion {
-  display: block;
-  width: 30%; 
-  height: auto;
-  margin-right: 10%;
-}
-
-.navegacionPrincipal{
-  margin-left: 0;
-
-}
-
-.navegacionPrincipal .textoBarraSuperior a{
- font-size: 12px;
- 
-}
-
-
-}
-
-
-
-/*proyectos*/
 
 .listaProyectos {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-    list-style: none;
-    font-weight: bold;
-    font-size: 18px;
-    text-align: center;
-    margin-top: 20px;
-  }
+  list-style: none;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 5vh;
+  padding: 0;
+  margin: 0;
+}
 
-  .listaProyectos a{
-    display: inline-block;
+.listaProyectos a {
+  display: inline-block;
   background-color: #535654;
   color: #fff;
   text-decoration: none;
@@ -418,10 +149,180 @@ html body {
   font-weight: bold;
   font-size: 16px;
   transition: background 0.2s, color 0.2s;
-  cursor: pointer;
-  }
+}
 
-  .listaProyectos a:hover {
+.listaProyectos a:hover {
   background-color: #8f8f8f;
   color: #e0ffe0;
+}
+
+/* ---- Pie de página ---- */
+
+#piePagina {
+  background-color: #202a25;
+  color: #f4f4f9;
+  width: 100%;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  height: 75px;
+}
+
+.LogoFacebookBarraInferior {
+  height: 50px;
+  width: auto;
+  margin-top: 5px;
+  margin-right: 2vh;
+  width: auto;
+  z-index: 10000;
+}
+
+.LogoFacebookBarraInferior:hover {
+  transform: scale(1.2);
+}
+
+.LogoFacebookBarraInferior:active {
+  filter: sepia(10) saturate(100%) hue-rotate(120deg) brightness(0.5);
+}
+
+.textoDerechosAutor {
+  font-size: 14px;
+  margin-top: 15px;
+  color: #f4f4f9;
+  align-items: start;
+  text-align: start;
+  z-index: 10; 
+  margin-left: 2vh;
+}
+
+/* ---- Responsive 900px ---- */
+
+@media (max-width: 900px) {
+  .contenedorHeader,
+  .contenedorPiepagina {
+    text-align: center;
+  }
+
+  .tituloPagina {
+    font-size: 32px;
+    text-align: center;
+    display: block;
+    
+  }
+
+  .navegacionPrincipal ul {
+    gap: 10px;
+  }
+
+  .presentacion {
+    width: 100%;
+    margin-top: 5vh;
+
+  }
+
+  .presentacionSnake {
+    font-size: 14px;
+    display: block;
+  }
+
+  .logoSnakePresentacion{
+    width: 30%;
+    margin-right: 10%;
+  }
+  
+  .textoDerechosAutor{
+    margin-top: 2vh;
+  }
+
+}
+
+/* ---- Responsive 600px ---- */
+
+@media (max-width: 600px) {
+  #barraSuperior {
+    height: auto;
+    padding: 0;
+    position: static;
+  }
+
+  #piePagina {
+    height: auto;
+    padding: 0;
+
+  }
+
+  .navegacionPrincipal ul{
+    margin-top: 0;
+  }
+
+  .LogoPixelBarraSuperior,
+  .LogoFacebookBarraInferior {
+    width: 40px;
+    margin: 0 auto;
+  }
+
+  .tituloPagina, #proyectos {
+    font-size: 30px;
+    margin-top: 2vh;
+    margin-bottom: 2vh;    
+  }
+
+
+  .presentacion {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .presentacionSnake {
+    font-size: 12px;
+    align-items: center;
+    text-align: start;
+    width: 99%;
+    margin-left: 0;
+
+
+  }
+
+  .logoSnakePresentacion {
+    width: 50%;
+    align-items: center;
+    margin-right: 0 ;
+  }
+
+  .textoDerechosAutor {
+    font-size: 12px;
+    margin-top: 0;
+
+  }
+
+
+  .LogoPixelBarraSuperior{
+    margin-right: 2vh;
+  }
+}
+
+ 
+
+/* ---- Responsive 400px ---- */
+
+@media (max-width: 400px) {
+
+   .textoDerechosAutor {
+    font-size: 11px;
+  }
+
+
+   .presentacionSnake {
+    width: 95%;
+
+  }
+
+  .navegacionPrincipal .textoBarraSuperior a{
+  font-size: 17px ;
+
+
+  }
+
 }

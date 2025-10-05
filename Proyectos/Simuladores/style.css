@@ -1,0 +1,38 @@
+.tituloPaginaSimuladores{
+  font-size: 40px;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+   }
+
+
+
+.simulador{
+  display: none;
+  padding: 20px;
+  margin-top: 20px;
+  border: 1px solid black;
+}
+
+.simulador h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+
+}
+
+.simulador p {
+    font-size: 18px;
+    color: black;
+    text-align: start;
+    font-weight: bold;
+    margin-top: 5vh;
+
+}
+
+
+#simuladorOhm{
+  background-color: #f0c419;
+  border: 1px solid black;
+}
